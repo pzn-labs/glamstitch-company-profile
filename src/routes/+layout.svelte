@@ -36,7 +36,7 @@
 	<div class="mx-4 max-w-screen-xl px-6 py-2 bg-gray-800/90 dark:bg-white/80 backdrop-blur shadow-lg rounded-full flex items-center justify-between transition-all duration-300 ease-in-out">
 	  <!-- Logo -->
 	  <a href="/company-profile-sveltekit" class="flex items-center">
-		<img src="/assets/image/logo glint.png" alt="Logo" class="h-12 w-12 object-contain transition-transform hover:scale-110">
+		<img src="assets/image/logo glint.png" alt="Logo" class="h-12 w-12 object-contain transition-transform hover:scale-110">
 	  </a>
   
 	  <!-- Desktop Navigation -->
@@ -69,10 +69,11 @@
 			</svg>
 		  </div>
 		  <div class="absolute left-0 mt-2 w-56 bg-gray-800 dark:bg-white shadow-md rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out">
-			<a href="/company-profile-sveltekit/about-us" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">About Us</a>
-			<a href="/company-profile-sveltekit/blog" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">Blog</a>
-			<a href="/company-profile-sveltekit/contact-us" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">Contact Us</a>
-			<a href="/company-profile-sveltekit/store-location" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">Store Location</a>
+				<a href="/company-profile-sveltekit/about-us" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">About Us</a>
+				<a href="/company-profile-sveltekit/blog" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">Blog</a>
+				<a href="/company-profile-sveltekit/contact-us" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">Contact Us</a>
+				<a href="/company-profile-sveltekit/store-location" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">Store Location</a>
+				<a href="/company-profile-sveltekit/gallery" class="block px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-400">Gallery</a>
 		  </div>
 		</div>
 	  </div>

@@ -12,8 +12,7 @@
       isDark = isSystemDark || isDark;
   
       document.documentElement.classList.toggle('dark', isDark);
-  
-      // Dengarkan perubahan sistem
+
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         isDark = e.matches;
         document.documentElement.classList.toggle('dark', isDark);
@@ -199,6 +198,8 @@
               <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
+              <li><a href="/company-profile-sveltekit/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
+
             </ul>
           </div>
         </div>

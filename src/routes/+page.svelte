@@ -1,12 +1,11 @@
 <script lang="ts">
-    import '../app.css';
-    import { onMount } from 'svelte';
-    
-    let isDark = false;
+  import '../app.css';
+  import { onMount } from 'svelte';
+
+  let isDark = false;
   
   onMount(() => {
-    const storedDark = localStorage.getItem('theme') === 'dark';
-    isDark = storedDark;
+    isDark = localStorage.getItem('theme') === 'dark';
 
     const isSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     isDark = isSystemDarkMode || isDark; 
@@ -18,16 +17,6 @@
       document.documentElement.classList.toggle('dark', isDark);
     });
   });
-
-  function toggleDarkMode() {
-    isDark = !isDark;
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }
-  
 </script>
 
 <!--header-->
@@ -111,10 +100,7 @@
             >
                 Hubungi Kami
             </a>
-            <a
-                href="/company-profile-sveltekit/blog"
-                class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition transform hover:scale-105"
-            >
+            <a href="/company-profile-sveltekit/blog" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition transform hover:scale-105">
                 Lihat Portofolio <span aria-hidden="true">→</span>
             </a>
             </div>
@@ -123,10 +109,9 @@
         <!-- Image Section -->
         <div class="mt-16 lg:mt-0 lg:ml-16 w-full max-w-md animate__animated animate__fadeIn animate__delay-1800ms">
             <img
-            src="/assets/image/gambar2.png"
+            src="assets/image/gallery5.jpg"
             alt="Tim produksi Glam Stitch sedang menjahit kaos custom"
-            class="w-full rounded-xl shadow-xl object-cover transition duration-500 transform hover:scale-105 hover:shadow-2xl"
-            />
+            class="w-full rounded-xl shadow-xl object-cover transition duration-500 transform hover:scale-105 hover:shadow-2xl" />
         </div>
         </div>
     </section>
