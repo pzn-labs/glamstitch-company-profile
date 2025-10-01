@@ -22,7 +22,7 @@
         <div class="mb-6 flex justify-center">
           <div class="relative rounded-full px-4 py-1.5 text-sm text-gray-300 ring-1 ring-white/20 hover:ring-white/30 transition">
             Jelajahi beragam produk dari Konveksi Glam Stitch.
-            <a href="/company-profile-sveltekit/product" class="ml-1 font-semibold text-white hover:underline">
+            <a href="/product" class="ml-1 font-semibold text-white hover:underline">
               Lihat Produk <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -40,11 +40,11 @@
   
         <!-- Tombol CTA -->
         <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/company-profile-sveltekit"
+            <a href="/"
               class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
               Mulai Sekarang
             </a>
-            <a href="/company-profile-sveltekit" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
+            <a href="/" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
           </div>
       </div>
     </div>
@@ -74,13 +74,13 @@
           </p>
           <div class="mt-10 flex flex-col sm:flex-row lg:justify-start justify-center gap-4">
             <a
-              href="/company-profile-sveltekit/services"
+              href="/services"
               class="inline-block rounded-md bg-indigo-600 dark:bg-indigo-500 px-6 py-3 text-base font-semibold text-white shadow-md hover:bg-indigo-500 dark:hover:bg-indigo-400 transition duration-300"
             >
               Layanan Kami
             </a>
             <a
-              href="/company-profile-sveltekit/about-us"
+              href="/about-us"
               class="inline-block rounded-md border border-gray-300 dark:border-gray-600 px-6 py-3 text-base font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300"
             >
               Tentang Kami
@@ -105,7 +105,7 @@
         
         <!-- Kaos Polos -->
         <div class="flex flex-col items-center text-center space-y-6">
-          <a href="/company-profile-sveltekit/tshirt" class="block w-full max-w-sm mx-auto group">
+          <a href="/tshirt" class="block w-full max-w-sm mx-auto group">
             <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
               <img 
                 src="https://media.istockphoto.com/id/185941321/id/foto/tubuh-bagian-atas-pria.jpg?s=612x612&w=0&k=20&c=iS9nQtGYKbNusFB7N6ygJZPdkmSvK1OwkhinmalwW3o=" 
@@ -122,7 +122,7 @@
   
         <!-- Jaket -->
         <div class="flex flex-col items-center text-center space-y-6">
-          <a href="/company-profile-sveltekit/jacket" class="block w-full max-w-sm mx-auto group">
+          <a href="/jacket" class="block w-full max-w-sm mx-auto group">
             <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
               <img 
                 src="https://media.istockphoto.com/id/2085676478/id/foto/mockup-hoodie-putih-pada-pria-berjanggut-kaus-oversized-dengan-saku-untuk-desain-branding.jpg?s=612x612&w=0&k=20&c=7QKD-7q--IDD5CV0p5JDNuWy6f26zHLa0qCI3cF8wOc=" 
@@ -139,7 +139,7 @@
   
         <!-- Kemeja -->
         <div class="flex flex-col items-center text-center space-y-6">
-          <a href="/company-profile-sveltekit/shirts" class="block w-full max-w-sm mx-auto group">
+          <a href="/shirts" class="block w-full max-w-sm mx-auto group">
             <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
               <img 
                 src="https://img.freepik.com/free-photo/business-casual-shirt-white-closeup-outdoor-photoshoot_53876-119744.jpg?ga=GA1.1.1868222757.1738365469&w=740" 
@@ -284,8 +284,8 @@
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
             <ul class="mt-6 space-y-4">
               <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
-              <li><a href="/company-profile-sveltekit/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
-              <li><a href="/company-profile-sveltekit/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
+              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
+              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
             </ul>
           </div>
           
@@ -293,9 +293,9 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Products</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/company-profile-sveltekit/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
-              <li><a href="/company-profile-sveltekit/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
-              <li><a href="/company-profile-sveltekit/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
+              <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
+              <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
             </ul>
           </div>
           
@@ -303,11 +303,11 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Discover Us</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/company-profile-sveltekit/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
-              <li><a href="/company-profile-sveltekit/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
-              <li><a href="/company-profile-sveltekit/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
-              <li><a href="/company-profile-sveltekit/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
-              <li><a href="/company-profile-sveltekit/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
+              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
+              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
+              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
+              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
 
             </ul>
           </div>

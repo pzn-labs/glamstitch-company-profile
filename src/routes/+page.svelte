@@ -14,7 +14,7 @@
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div class="relative rounded-full px-3 py-1 text-sm font-medium text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
             Konveksi Glam Stitch — Produksi pakaian berkualitas tinggi untuk merek Anda.
-            <a href="/company-profile-sveltekit/product" class="font-semibold text-white">
+            <a href="/product" class="font-semibold text-white">
               <span class="absolute inset-0" aria-hidden="true"></span>Selengkapnya <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -32,11 +32,11 @@
   
           <!-- Call to Action Buttons with Animations -->
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/company-profile-sveltekit"
+            <a href="/"
               class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
               Mulai Sekarang
             </a>
-            <a href="/company-profile-sveltekit" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
+            <a href="/" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
@@ -79,23 +79,23 @@
             </ul>
             <div class="mt-10 flex items-center gap-x-6">
             <a
-                href="/company-profile-sveltekit/contact-us"
+                href="/contact-us"
                 class="rounded-md bg-indigo-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 transition transform hover:scale-105"
             >
                 Hubungi Kami
             </a>
-            <a href="/company-profile-sveltekit/blog" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition transform hover:scale-105">
+            <a href="/blog" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition transform hover:scale-105">
                 Lihat Portofolio <span aria-hidden="true">→</span>
             </a>
             </div>
         </div>
     
         <!-- Image Section -->
-        <div class="mt-16 lg:mt-0 lg:ml-16 w-full max-w-md animate__animated animate__fadeIn animate__delay-1800ms">
+        <div class="mt-16 lg:mt-0 lg:ml-16 w-full lg:w-1/2 animate__animated animate__fadeIn animate__delay-1800ms">
             <img
             src="assets/image/gallery5.jpg"
             alt="Tim produksi Glam Stitch sedang menjahit kaos custom"
-            class="w-full rounded-xl shadow-xl object-cover transition duration-500 transform hover:scale-105 hover:shadow-2xl" />
+            class="w-full h-96 lg:h-[500px] rounded-2xl shadow-2xl object-cover transition duration-500 transform hover:scale-105 hover:shadow-2xl" />
         </div>
         </div>
     </section>
@@ -108,12 +108,12 @@
       <p class="mt-4 text-base text-gray-500 text-center animate__animated animate__fadeIn animate__delay-600ms">Ikuti langkah mudah berikut untuk memesan produk dari Glam Stitch.</p>
       
       <div class="mt-16 flex flex-col lg:flex-row items-center lg:items-start gap-10">
-        <!-- Gambar -->
-        <div class="w-full lg:w-1/2 animate__animated animate__fadeInUp animate__delay-900ms">
-            <img 
+         <!-- Gambar -->
+         <div class="w-full lg:w-1/2 animate__animated animate__fadeInUp animate__delay-900ms">
+             <img 
               src="assets/image/gambar4.png" 
               alt="Ilustrasi cara pemesanan" 
-              class="w-full max-w-2xl md:max-w-3xl lg:max-w-md rounded-xl shadow-xl object-cover transition duration-500 transform hover:scale-105 hover:shadow-2xl">
+              class="w-full h-96 lg:h-[600px] rounded-2xl shadow-2xl object-contain bg-white p-4 transition duration-500 transform hover:scale-105 hover:shadow-2xl">
         </div>
           
           
@@ -154,35 +154,35 @@
       <!-- Card ukuran -->
       <div class="mx-auto mt-16 flex flex-col gap-8 lg:mt-20 lg:flex-row lg:items-center justify-center">
         
-        <!-- T-Shirt -->
-        <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-gray-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 animate__animated animate__fadeInUp animate__delay-600ms">
-          <p class="text-3xl font-bold text-gray-900">T-Shirt</p>
-          <div class="text-center">
-            <img src="assets/image/gambar5.png" alt="T-Shirt" class="rounded-2xl mb-4">
-            <p class="text-lg font-semibold text-gray-900">Ukuran T-Shirt</p>
-            <p class="mt-2 text-base leading-7 text-gray-600">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
-          </div>
-        </div>
+         <!-- T-Shirt -->
+         <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__delay-600ms">
+           <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">T-Shirt</p>
+           <div class="text-center">
+             <img src="assets/image/gambar5.png" alt="T-Shirt Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
+             <p class="text-xl font-semibold text-gray-900 dark:text-white">Ukuran T-Shirt</p>
+             <p class="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
+           </div>
+         </div>
   
-        <!-- Jaket -->
-        <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-gray-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 animate__animated animate__fadeInUp animate__delay-900ms">
-          <p class="text-3xl font-bold text-gray-900">Jaket</p>
-          <div class="text-center">
-            <img src="assets/image/gambar6.png" alt="Jacket" class="rounded-2xl mb-4">
-            <p class="text-lg font-semibold text-gray-900">Ukuran Jaket</p>
-            <p class="mt-2 text-base leading-7 text-gray-600">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
-          </div>
-        </div>
+         <!-- Jaket -->
+         <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__delay-900ms">
+           <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Jaket</p>
+           <div class="text-center">
+             <img src="assets/image/gambar6.png" alt="Jacket Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
+             <p class="text-xl font-semibold text-gray-900 dark:text-white">Ukuran Jaket</p>
+             <p class="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
+           </div>
+         </div>
   
-        <!-- Kemeja -->
-        <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-gray-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 animate__animated animate__fadeInUp animate__delay-1200ms">
-          <p class="text-3xl font-bold text-gray-900">Kemeja</p>
-          <div class="text-center">
-            <img src="assets/image/gambar7.png" alt="Shirt" class="rounded-2xl mb-4">
-            <p class="text-lg font-semibold text-gray-900">Ukuran Kemeja</p>
-            <p class="mt-2 text-base leading-7 text-gray-600">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
-          </div>
-        </div>
+         <!-- Kemeja -->
+         <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__delay-1200ms">
+           <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Kemeja</p>
+           <div class="text-center">
+             <img src="assets/image/gambar7.png" alt="Shirt Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
+             <p class="text-xl font-semibold text-gray-900 dark:text-white">Ukuran Kemeja</p>
+             <p class="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
+           </div>
+         </div>
       </div>
     </div>  
   </section>
@@ -280,7 +280,7 @@
           <div class="flex space-x-6">
             
             <!-- Facebook -->
-            <a href="/company-profile-sveltekit/" class="text-gray-500 hover:text-gray-400 transition duration-300">
+            <a href="/" class="text-gray-500 hover:text-gray-400 transition duration-300">
               <span class="sr-only">Facebook</span>
               <svg class="h-7 w-7 animate__animated animate__fadeIn animate__delay-2s" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M22 12a10 10 0 10-11.6 9.87v-6.99H8.1v-2.88h2.3V9.41c0-2.28 1.35-3.55 3.42-3.55.99 0 2.03.18 2.03.18v2.24h-1.14c-1.12 0-1.47.7-1.47 1.42v1.71h2.5l-.4 2.88h-2.1v6.99A10 10 0 0022 12z"/>
@@ -288,7 +288,7 @@
             </a>
             
             <!-- Instagram -->
-            <a href="/company-profile-sveltekit/" class="text-gray-500 hover:text-gray-400 transition duration-300">
+            <a href="/" class="text-gray-500 hover:text-gray-400 transition duration-300">
               <span class="sr-only">Instagram</span>
               <svg class="h-7 w-7 animate__animated animate__fadeIn animate__delay-2_5s" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-1a1 1 0 100 2 1 1 0 000-2z"/>
@@ -304,9 +304,9 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/company-profile-sveltekit/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
-              <li><a href="/company-profile-sveltekit/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
-              <li><a href="/company-profile-sveltekit/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
+              <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
+              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
+              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
             </ul>
           </div>
           
@@ -314,9 +314,9 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Products</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/company-profile-sveltekit/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
-              <li><a href="/company-profile-sveltekit/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
-              <li><a href="/company-profile-sveltekit/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
+              <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
+              <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
             </ul>
           </div>
           
@@ -324,11 +324,11 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Discover Us</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/company-profile-sveltekit/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
-              <li><a href="/company-profile-sveltekit/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
-              <li><a href="/company-profile-sveltekit/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
-              <li><a href="/company-profile-sveltekit/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
-              <li><a href="/company-profile-sveltekit/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
+              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
+              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
+              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
+              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
 
             </ul>
           </div>
@@ -345,3 +345,4 @@
   
   
   
+
