@@ -5,11 +5,14 @@ import path from 'path';
 const config = {
   kit: {
     paths: {
-      base: '/company-profile-sveltekit', 
+      base: process.env.NODE_ENV === 'production' ? '/glamstitch-company-profile' : '', 
     },
     adapter: adapter({
-      pages: path.join(process.cwd(), 'build'),
-      assets: path.join(process.cwd(), 'build'),
+      pages: 'build',
+      assets: 'build',
+      fallback: undefined,
+      precompress: false,
+      strict: true
     }),
   },
 };
