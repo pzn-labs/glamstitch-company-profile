@@ -1,31 +1,6 @@
 <script lang="ts">
-    import '../../app.css';
-    import { onMount } from 'svelte';
-    
-  
-    let isDark = false;
-  
-    onMount(() => {
-      const storedDark = localStorage.getItem('theme') === 'dark';
-      isDark = storedDark;
-  
-      const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      isDark = isSystemDark || isDark;
-  
-      document.documentElement.classList.toggle('dark', isDark);
-
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        isDark = e.matches;
-        document.documentElement.classList.toggle('dark', isDark);
-      });
-    });
-  
-    function toggleDarkMode() {
-      isDark = !isDark;
-      document.documentElement.classList.toggle('dark', isDark);
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    }
-  </script>
+  // Page content only - dark mode handled by layout
+</script>
 
 <style type="text/tailwindcss"></style>
   
@@ -55,10 +30,10 @@
           Didesain untuk kenyamanan dan tampil stylish, kaos polos kami cocok untuk keperluan komunitas, bisnis, hingga kebutuhan sehari-hari.
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/company-profile-sveltekit/contact" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
+            <a href="/company-profile-sveltekit/contact-us" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
               Pesan Sekarang
             </a>
-            <a href="/company-profile-sveltekit/product-list" class="text-sm font-semibold text-white hover:text-indigo-400 dark:text-gray-300 dark:hover:text-indigo-400 transition-all transform hover:scale-105">
+            <a href="/company-profile-sveltekit/product" class="text-sm font-semibold text-white hover:text-indigo-400 dark:text-gray-300 dark:hover:text-indigo-400 transition-all transform hover:scale-105">
               Lihat Produk Lainnya <span aria-hidden="true">→</span>
             </a>
           </div>

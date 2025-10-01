@@ -1,30 +1,6 @@
 <script lang="ts">
-    import '../../app.css';
-    import { onMount } from 'svelte';
-  
-    let isDark = false;
-  
-    onMount(() => {
-      const storedDark = localStorage.getItem('theme') === 'dark';
-      isDark = storedDark;
-  
-      const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      isDark = isSystemDark || isDark;
-  
-      document.documentElement.classList.toggle('dark', isDark);
-  
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        isDark = e.matches;
-        document.documentElement.classList.toggle('dark', isDark);
-      });
-    });
-  
-    function toggleDarkMode() {
-      isDark = !isDark;
-      document.documentElement.classList.toggle('dark', isDark);
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    }
-  </script>
+  // Page content only - dark mode handled by layout
+</script>
 
 <!--header -->
 <section class="relative isolate overflow-hidden pt-6">
@@ -61,11 +37,11 @@
   
           <!-- CTA Buttons -->
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/project-sveltekit#"
+            <a href="/company-profile-sveltekit/#"
               class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
               Mulai Sekarang
             </a>
-            <a href="/project-sveltekit#" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
+            <a href="/company-profile-sveltekit/#" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
@@ -103,10 +79,10 @@
   
           <!-- Tombol CTA -->
           <div class="mt-10 flex flex-col sm:flex-row items-center gap-4">
-            <a href="/#services" class="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-indigo-500 transition">
+            <a href="/company-profile-sveltekit/services" class="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-indigo-500 transition">
               Layanan Kami
             </a>
-            <a href="/#about" class="text-sm font-semibold text-gray-900 dark:text-white hover:underline">
+            <a href="/company-profile-sveltekit/about" class="text-sm font-semibold text-gray-900 dark:text-white hover:underline">
               Pelajari lebih lanjut <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -326,9 +302,9 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
-              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
-              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
+              <li><a href="/company-profile-sveltekit/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
+              <li><a href="/company-profile-sveltekit/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
+              <li><a href="/company-profile-sveltekit/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
             </ul>
           </div>
           
@@ -336,9 +312,9 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Products</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
-              <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
+              <li><a href="/company-profile-sveltekit/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
+              <li><a href="/company-profile-sveltekit/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
+              <li><a href="/company-profile-sveltekit/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
             </ul>
           </div>
           
@@ -346,10 +322,10 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Discover Us</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
-              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
-              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
-              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
+              <li><a href="/company-profile-sveltekit/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
+              <li><a href="/company-profile-sveltekit/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
+              <li><a href="/company-profile-sveltekit" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
+              <li><a href="/company-profile-sveltekit/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
               <li><a href="/company-profile-sveltekit/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
 
             </ul>

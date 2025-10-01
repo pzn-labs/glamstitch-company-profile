@@ -1,30 +1,6 @@
 <script lang="ts">
-    import '../../app.css';
-    import { onMount } from 'svelte';
-  
-    let isDark = false;
-  
-    onMount(() => {
-      const storedDark = localStorage.getItem('theme') === 'dark';
-      isDark = storedDark;
-  
-      const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      isDark = isSystemDark || isDark;
-  
-      document.documentElement.classList.toggle('dark', isDark);
-  
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        isDark = e.matches;
-        document.documentElement.classList.toggle('dark', isDark);
-      });
-    });
-  
-    function toggleDarkMode() {
-      isDark = !isDark;
-      document.documentElement.classList.toggle('dark', isDark);
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    }
-  </script>
+  // Page content only - dark mode handled by layout
+</script>
 
 <!--header-->
 <section class="relative isolate overflow-hidden bg-gray-900 dark:bg-gray-950 pt-4">
@@ -44,7 +20,7 @@
         <div class="hidden sm:flex justify-center mb-6">
           <div class="relative rounded-full bg-white/10 px-4 py-1.5 text-sm text-gray-200 ring-1 ring-white/20 hover:ring-white/40 transition">
             Solusi konveksi terbaik untuk kebutuhan Anda.
-            <a href="/project-sveltekit/product" class="ml-2 font-semibold text-white underline underline-offset-4">
+            <a href="/company-profile-sveltekit/product" class="ml-2 font-semibold text-white underline underline-offset-4">
               Lihat Produk <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -61,11 +37,11 @@
     
           <!-- CTA Buttons -->
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/"
+            <a href="/company-profile-sveltekit/"
               class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
               Mulai Sekarang
             </a>
-            <a href="/" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
+            <a href="/company-profile-sveltekit/" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
@@ -98,7 +74,7 @@
           <p class="text-gray-600 dark:text-gray-300 mb-4">
             Tingkatkan identitas brand Anda dengan hasil bordir presisi, tahan lama, dan elegan untuk segala kebutuhan.
           </p>
-          <a href="/project-sveltekit/#" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
+          <a href="/company-profile-sveltekit/#" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
             Pelajari Lebih Lanjut
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -300,7 +276,7 @@
             <dd class="mt-3 text-lg text-gray-600 dark:text-gray-300">
               Kami melayani desain pakaian sesuai kebutuhan Anda, baik untuk brand, komunitas, maupun keperluan pribadi.
               <p class="mt-4">
-                <a href="/project-sveltekit/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
+                <a href="/company-profile-sveltekit/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
               </p>
             </dd>
           </div>
@@ -312,7 +288,7 @@
             <dd class="mt-3 text-lg text-gray-600 dark:text-gray-300">
               Glam Stitch memiliki tim produksi profesional untuk menangani pemesanan dalam jumlah besar secara efisien dan tepat waktu.
               <p class="mt-4">
-                <a href="/project-sveltekit/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
+                <a href="/company-profile-sveltekit/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
               </p>
             </dd>
           </div>
@@ -437,9 +413,9 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
-              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
-              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
+              <li><a href="/company-profile-sveltekit/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
+              <li><a href="/company-profile-sveltekit/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
+              <li><a href="/company-profile-sveltekit/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
             </ul>
           </div>
           
@@ -447,9 +423,9 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Products</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
-              <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
+              <li><a href="/company-profile-sveltekit/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
+              <li><a href="/company-profile-sveltekit/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
+              <li><a href="/company-profile-sveltekit/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
             </ul>
           </div>
           
@@ -457,10 +433,10 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Discover Us</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
-              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
-              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
-              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
+              <li><a href="/company-profile-sveltekit/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
+              <li><a href="/company-profile-sveltekit/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
+              <li><a href="/company-profile-sveltekit/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
+              <li><a href="/company-profile-sveltekit/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
               <li><a href="/company-profile-sveltekit/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
 
             </ul>

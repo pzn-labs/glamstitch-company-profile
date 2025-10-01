@@ -1,22 +1,5 @@
 <script lang="ts">
-  import '../app.css';
-  import { onMount } from 'svelte';
-
-  let isDark = false;
-  
-  onMount(() => {
-    isDark = localStorage.getItem('theme') === 'dark';
-
-    const isSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    isDark = isSystemDarkMode || isDark; 
-    document.documentElement.classList.toggle('dark', isDark);
-
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      isDark = e.matches;
-      document.documentElement.classList.toggle('dark', isDark);
-    });
-  });
+  // Page content only - dark mode handled by layout
 </script>
 
 <!--header-->
@@ -43,6 +26,7 @@
             Glam Stitch Mitra Konveksi Terpercaya Anda
           </h1>
           <p class="mt-8 text-lg font-medium text-gray-400 sm:text-xl animate__animated animate__fadeIn animate__delay-2s">
+            
             Kami menyediakan layanan produksi pakaian yang terpercaya dan profesional untuk membantu pertumbuhan bisnis Anda — dengan kualitas tinggi, proses cepat, dan harga bersaing.
           </p>
   
@@ -344,6 +328,8 @@
               <li><a href="/company-profile-sveltekit/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
               <li><a href="/company-profile-sveltekit/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
               <li><a href="/company-profile-sveltekit/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
+              <li><a href="/company-profile-sveltekit/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
+
             </ul>
           </div>
         </div>
