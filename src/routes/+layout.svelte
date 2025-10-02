@@ -49,52 +49,49 @@
 
 		<!-- Enhanced Desktop Navigation -->
 		<div class="hidden lg:flex items-center space-x-2">
-			<a href="{base}/" class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium relative group">
+			<a href="{base}/" class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium">
 				<span class="relative z-10">Beranda</span>
-				<div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 			</a>
 
 			<!-- Enhanced Products Dropdown -->
 			<div class="relative group">
-				<button class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium flex items-center gap-2 relative">
+				<button class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium flex items-center gap-2">
 					<span class="relative z-10">Produk</span>
 					<svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
-					<div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 				</button>
 				<div class="absolute left-0 top-full mt-3 w-52 bg-white/95 dark:bg-gray-800/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform scale-95 group-hover:scale-100">
 					<div class="p-2 space-y-1">
-						<a href="{base}/tshirt" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kaos</a>
-						<a href="{base}/polo" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kaos Polo</a>
-						<a href="{base}/jersey" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Jersey</a>
-						<a href="{base}/jacket" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Jaket</a>
-						<a href="{base}/shirts" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kemeja</a>
+						<a href="{base}/tshirt" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kaos</a>
+						<a href="{base}/polo" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kaos Polo</a>
+						<a href="{base}/jersey" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Jersey</a>
+						<a href="{base}/jacket" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Jaket</a>
+						<a href="{base}/shirts" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kemeja</a>
 					</div>
 				</div>
 			</div>
 
-			<a href="{base}/services" class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium relative group">
+			<a href="{base}/services" class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium">
 				<span class="relative z-10">Layanan</span>
-				<div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 			</a>
 
 			<!-- Enhanced Discover Us Dropdown -->
 			<div class="relative group">
-				<button class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium flex items-center gap-2 relative">
+				<button class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium flex items-center gap-2">
 					<span class="relative z-10">Jelajahi</span>
 					<svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
-					<div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 				</button>
 				<div class="absolute left-0 top-full mt-3 w-56 bg-white/95 dark:bg-gray-800/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform scale-95 group-hover:scale-100">
 					<div class="p-2 space-y-1">
-						<a href="{base}/about-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Tentang Kami</a>
-						<a href="{base}/blog" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Blog</a>
-						<a href="{base}/contact-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Hubungi Kami</a>
-						<a href="{base}/store-location" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Lokasi Toko</a>
-						<a href="{base}/gallery" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Galeri</a>
+						<a href="{base}/about-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Tentang Kami</a>
+						<a href="{base}/blog" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Blog</a>
+						<a href="{base}/faq" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">FAQ</a>
+						<a href="{base}/contact-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Hubungi Kami</a>
+						<a href="{base}/store-location" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Lokasi Toko</a>
+						<a href="{base}/gallery" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Galeri</a>
 					</div>
 				</div>
 			</div>
@@ -105,7 +102,7 @@
 			<!-- Enhanced Dark Mode Toggle Button -->
 			<button 
 				onclick={toggleDarkMode}
-				class="relative p-3 rounded-xl hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-700 transition-all duration-300 group overflow-hidden"
+				class="relative p-3 rounded-xl hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 group overflow-hidden"
 				aria-label="Toggle dark mode"
 			>
 				{#if isDark}
