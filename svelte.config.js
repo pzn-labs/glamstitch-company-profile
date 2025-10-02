@@ -15,7 +15,6 @@ export default {
       $components: 'src/components',
       $lib: 'src/lib'
     }
-  },
-  preprocess: vitePreprocess()
+  }
 };
 

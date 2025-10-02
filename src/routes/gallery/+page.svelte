@@ -6,6 +6,7 @@
   import gallery3 from '$lib/assets/image/gallery3.jpg';
   import gallery4 from '$lib/assets/image/gallery4.jpg';
   import logoGlint from '$lib/assets/image/logo glint.png';
+  import poto7 from '$lib/assets/image/poto7.jpg'
 </script>
 
 <!-- Hero Header -->
@@ -49,8 +50,31 @@
 			</div>
 		</div>
 
-		<!-- 2. Gudang -->
+		<!-- 2. Tim Glam Stitch-->
 		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
+			<div class="lg:w-1/2">
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Tim Glam Stitch</h2>
+				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
+					Gudang Glam Stitch menjadi pusat penyimpanan bahan baku seperti kain, benang, dan aksesoris jahit.
+					Sistem penyimpanan kami tertata rapi dengan labelisasi digital untuk memastikan
+					setiap bahan mudah dilacak dan diambil kapan saja dibutuhkan.
+					Kebersihan dan sirkulasi udara gudang selalu dijaga untuk mempertahankan kualitas bahan terbaik.
+				</p>
+			</div>
+			<img
+				src={poto7}
+				alt="Gudang Glam Stitch"
+				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+			/>
+		</div>
+
+		<!-- 3. Gudang -->
+		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
+			<img
+				src={gallery1}
+				alt="Gudang Glam Stitch"
+				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+			/>
 			<div class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Gudang Penyimpanan</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
@@ -60,20 +84,11 @@
 					Kebersihan dan sirkulasi udara gudang selalu dijaga untuk mempertahankan kualitas bahan terbaik.
 				</p>
 			</div>
-			<img
-				src={gallery1}
-				alt="Gudang Glam Stitch"
-				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
-			/>
+	
 		</div>
 
-		<!-- 3. Tempat Produksi -->
+		<!-- 4. Tempat Produksi -->
 		<div class="flex flex-col lg:flex-row items-center gap-12">
-			<img
-				src={gallery2}
-				alt="Tempat Produksi Glam Stitch"
-				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
-			/>
 			<div class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Area Produksi & Penjahitan</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
@@ -83,10 +98,20 @@
 					Kami selalu mengutamakan ketelitian dan kebersihan di setiap tahap untuk menghasilkan produk yang sempurna.
 				</p>
 			</div>
+			<img
+			src={gallery2}
+			alt="Tempat Produksi Glam Stitch"
+			class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+		/>
 		</div>
 
-		<!-- 4. Kasir -->
+		<!-- 5. Kasir -->
 		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
+			<img
+				src={gallery3}
+				alt="Kasir Glam Stitch"
+				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+			/>
 			<div class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Area Kasir & Pelayanan</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
@@ -96,11 +121,6 @@
 					Kami berkomitmen memberikan pengalaman terbaik dari awal hingga akhir proses pembelian Anda.
 				</p>
 			</div>
-			<img
-				src={gallery3}
-				alt="Kasir Glam Stitch"
-				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
-			/>
 		</div>
 
 	</div>

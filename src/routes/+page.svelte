@@ -11,6 +11,7 @@
 <!--header-->
 <main>
   <section class="relative isolate overflow-hidden pt-6">
+    <!-- Enhanced background with gradient overlay -->
     <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
     alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
   
@@ -18,7 +19,7 @@
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24">
         <!-- Tagline Section -->
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div class="relative rounded-full px-3 py-1 text-sm font-medium text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+          <div class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
             Konveksi Glam Stitch — Produksi pakaian berkualitas tinggi untuk merek Anda.
             <a href="/product" class="font-semibold text-white">
               <span class="absolute inset-0" aria-hidden="true"></span>Selengkapnya <span aria-hidden="true">&rarr;</span>
@@ -36,13 +37,17 @@
             Kami menyediakan layanan produksi pakaian yang terpercaya dan profesional untuk membantu pertumbuhan bisnis Anda — dengan kualitas tinggi, proses cepat, dan harga bersaing.
           </p>
   
-          <!-- Call to Action Buttons with Animations -->
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/"
-              class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
-              Mulai Sekarang
+          <!-- Enhanced Call to Action Buttons -->
+          <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <a href="/contact-us"
+              class="group relative px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
+              <span class="relative z-10">Mulai Sekarang</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
-            <a href="/" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
+            <a href="/product" class="group text-white font-semibold hover:text-indigo-300 transition-all duration-300 flex items-center gap-2">
+              Jelajahi Produk Kami 
+              <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-2">→</span>
+            </a>
           </div>
         </div>
       </div>
@@ -58,7 +63,7 @@
         aria-hidden="true"
         >
         <div
-            class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
+            class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] via-[#4f46e5] to-[#ec4899] opacity-30 dark:opacity-20"
             style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
         ></div>
         </div>
@@ -66,15 +71,19 @@
         <div class="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:items-center lg:justify-between lg:px-16 lg:py-24">
         <!-- Text Content -->
         <div class="max-w-2xl animate__animated animate__fadeIn animate__delay-600ms">
-            <span class="inline-block rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
-            Kenapa Memilih Kami?
-            </span>
-            <h2 class="mt-10 text-4xl sm:text-6xl font-bold tracking-tight text-pretty">
+            <div class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500/10 to-purple-500/10 px-4 py-2 text-sm font-semibold text-indigo-600 dark:text-indigo-400 ring-1 ring-inset ring-indigo-500/20 mb-6">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              Kenapa Memilih Kami?
+            </div>
+            
+            <h2 class="text-4xl sm:text-6xl font-bold tracking-tight text-pretty bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
             Kenapa Harus Glam Stitch?
             </h2>
-            <p class="mt-6 text-lg sm:text-xl font-medium text-gray-600 dark:text-gray-400">
+            <p class="mt-6 text-lg sm:text-xl font-medium text-gray-600 dark:text-gray-400 leading-relaxed">
             Kami menghadirkan layanan konveksi berkualitas tinggi dengan proses mudah, hasil presisi, dan pelayanan profesional.
-            Glam Stitch adalah solusi terpercaya untuk kebutuhan pakaian custom Anda.
+            <span class="text-indigo-600 dark:text-indigo-400 font-semibold">Glam Stitch</span> adalah solusi terpercaya untuk kebutuhan pakaian custom Anda.
             </p>
             <ul class="mt-6 space-y-3 text-base leading-relaxed text-gray-600 dark:text-gray-400">
             <li>✅ Bahan Berkualitas Premium</li>
@@ -86,12 +95,14 @@
             <div class="mt-10 flex items-center gap-x-6">
             <a
                 href="/contact-us"
-                class="rounded-md bg-indigo-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 transition transform hover:scale-105"
+                class="group relative px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
             >
-                Hubungi Kami
+                <span class="relative z-10">Hubungi Kami</span>
+                <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
-            <a href="/blog" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition transform hover:scale-105">
-                Lihat Portofolio <span aria-hidden="true">→</span>
+            <a href="/gallery" class="group text-indigo-600 dark:text-indigo-400 font-semibold hover:text-indigo-500 dark:hover:text-indigo-300 transition-all duration-300 flex items-center gap-2">
+                Lihat Portofolio 
+                <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1">→</span>
             </a>
             </div>
         </div>
