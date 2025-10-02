@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 	
 	let isDark = $state(false);
 	
@@ -40,14 +41,14 @@
 <nav class="fixed top-4 inset-x-0 z-50 px-4">
 	<div class="mx-auto max-w-7xl px-6 py-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-xl rounded-full border border-gray-200/50 dark:border-gray-700/50 flex items-center justify-between transition-all duration-300">
 		<!-- Logo -->
-		<a href="/" class="flex items-center gap-2 group">
-			<img src="/assets/image/logo glint.png" alt="Glam Stitch Logo" class="h-12 w-12 object-contain transition-transform group-hover:scale-110 group-hover:rotate-3">
+		<a href="{base}/" class="flex items-center gap-2 group">
+			<img src="{base}/assets/image/logo glint.png" alt="Glam Stitch Logo" class="h-12 w-12 object-contain transition-transform group-hover:scale-110 group-hover:rotate-3">
 			<span class="hidden sm:block text-xl font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
 		</a>
 
 		<!-- Desktop Navigation -->
 		<div class="hidden lg:flex items-center space-x-1">
-			<a href="/" class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all font-medium">
+			<a href="{base}/" class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all font-medium">
 				Home
 			</a>
 
@@ -60,13 +61,13 @@
 					</svg>
 				</button>
 				<div class="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
-					<a href="/tshirt" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">T-Shirt</a>
-					<a href="/jacket" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Jacket</a>
-					<a href="/shirts" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Shirts</a>
+					<a href="{base}/tshirt" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">T-Shirt</a>
+					<a href="{base}/jacket" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Jacket</a>
+					<a href="{base}/shirts" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Shirts</a>
 				</div>
 			</div>
 
-			<a href="/services" class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all font-medium">
+			<a href="{base}/services" class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all font-medium">
 				Services
 			</a>
 
@@ -79,11 +80,11 @@
 					</svg>
 				</button>
 				<div class="absolute left-0 top-full mt-2 w-52 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
-					<a href="/about-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About Us</a>
-					<a href="/blog" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Blog</a>
-					<a href="/contact-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact Us</a>
-					<a href="/store-location" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Store Location</a>
-					<a href="/gallery" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Gallery</a>
+					<a href="{base}/about-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About Us</a>
+					<a href="{base}/blog" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Blog</a>
+					<a href="{base}/contact-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact Us</a>
+					<a href="{base}/store-location" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Store Location</a>
+					<a href="{base}/gallery" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Gallery</a>
 				</div>
 			</div>
 		</div>
@@ -132,7 +133,7 @@
 		<!-- Header -->
 		<div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
 			<div class="flex items-center gap-2">
-				<img src="/assets/image/logo glint.png" alt="Logo" class="h-10 w-10" />
+				<img src="{base}/assets/image/logo glint.png" alt="Logo" class="h-10 w-10" />
 				<span class="text-lg font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
 			</div>
 			<label for="menu-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer">
@@ -144,7 +145,7 @@
 
 		<!-- Navigation -->
 		<nav class="p-4 space-y-2">
-			<a href="/" class="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
+			<a href="{base}/" class="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
 				Home
 			</a>
 
@@ -158,19 +159,19 @@
 					</svg>
 				</label>
 				<div class="overflow-hidden max-h-0 peer-checked/products:max-h-48 transition-all duration-300 ml-4 space-y-1">
-					<a href="/tshirt" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+					<a href="{base}/tshirt" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						T-Shirt
 					</a>
-					<a href="/jacket" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+					<a href="{base}/jacket" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						Jacket
 					</a>
-					<a href="/shirts" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+					<a href="{base}/shirts" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						Shirts
 					</a>
 				</div>
 			</div>
 
-			<a href="/services" class="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
+			<a href="{base}/services" class="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
 				Services
 			</a>
 
@@ -184,19 +185,19 @@
 					</svg>
 				</label>
 				<div class="overflow-hidden max-h-0 peer-checked/discover:max-h-64 transition-all duration-300 ml-4 space-y-1">
-					<a href="/about-us" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+					<a href="{base}/about-us" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						About Us
 					</a>
-					<a href="/blog" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+					<a href="{base}/blog" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						Blog
 					</a>
-					<a href="/contact-us" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+					<a href="{base}/contact-us" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						Contact Us
 					</a>
-					<a href="/store-location" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+					<a href="{base}/store-location" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						Store Location
 					</a>
-					<a href="/gallery" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+					<a href="{base}/gallery" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						Gallery
 					</a>
 				</div>

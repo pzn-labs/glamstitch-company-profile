@@ -5,7 +5,7 @@ import path from 'path';
 const config = {
   kit: {
     paths: {
-      base: '/glamstitch-company-profile',
+      base: process.env.NODE_ENV === 'production' ? '/glamstitch-company-profile' : '',
     },
     adapter: adapter({
       pages: 'build',
