@@ -1,11 +1,17 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
+  import galleryMain from '$lib/assets/image/gallery.jpg';
+  import gallery1 from '$lib/assets/image/gallery1.jpg';
+  import gallery2 from '$lib/assets/image/gallery2.jpg';
+  import gallery3 from '$lib/assets/image/gallery3.jpg';
+  import gallery4 from '$lib/assets/image/gallery4.jpg';
+  import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
 <!-- Hero Header -->
 <section class="relative isolate overflow-hidden pt-6">
 	<img
-		src="assets/image/gallery.jpg"
+		src={galleryMain}
 		alt="Glam Stitch Gallery"
 		class="absolute inset-0 -z-10 w-full h-full object-cover"/>
 	<div class="absolute inset-0 -z-10 bg-black/50"></div>
@@ -28,7 +34,7 @@
 		<!-- 1. Toko -->
 		<div class="flex flex-col lg:flex-row items-center gap-12">
 			<img
-				src="assets/image/gallery4.jpg"
+				src={gallery4}
 				alt="Toko Glam Stitch"
 				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
@@ -55,7 +61,7 @@
 				</p>
 			</div>
 			<img
-				src="assets/image/gallery1.jpg"
+				src={gallery1}
 				alt="Gudang Glam Stitch"
 				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
@@ -64,7 +70,7 @@
 		<!-- 3. Tempat Produksi -->
 		<div class="flex flex-col lg:flex-row items-center gap-12">
 			<img
-				src="assets/image/gallery2.jpg"
+				src={gallery2}
 				alt="Tempat Produksi Glam Stitch"
 				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
@@ -91,7 +97,7 @@
 				</p>
 			</div>
 			<img
-				src="assets/image/gallery3.jpg"
+				src={gallery3}
 				alt="Kasir Glam Stitch"
 				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
@@ -109,7 +115,7 @@
 
 			<!-- Logo & Description -->
 			<div class="space-y-6">
-				<img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src="assets/image/logo glint.png" alt="Glam Stitch Logo">
+				<img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
 				<div class="flex space-x-6">
 
 					<!-- Facebook -->
@@ -135,33 +141,35 @@
 
 				<!-- Navigasi -->
 				<div>
-					<h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
-					<ul class="mt-6 space-y-4">
-						<li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
-						<li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
-						<li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
-					</ul>
-				</div>
-
-				<!-- Products -->
-				<div>
-					<h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Products</h3>
-					<ul class="mt-6 space-y-4">
-						<li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
-						<li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
-						<li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
-					</ul>
-				</div>
-
-				<!-- Discover Us -->
-				<div>
-					<h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Discover Us</h3>
-					<ul class="mt-6 space-y-4">
-						<li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
-						<li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
-						<li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
-						<li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
-						<li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
+            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
+            <ul class="mt-6 space-y-4">
+              <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
+              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
+              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
+            </ul>
+          </div>
+          
+          <!-- Products -->
+          <div>
+            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Produk</h3>
+            <ul class="mt-6 space-y-4">
+              <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
+              <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
+              <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jaket</a></li>
+              <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
+            </ul>
+          </div>
+          
+          <!-- Discover Us -->
+          <div>
+            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
+            <ul class="mt-6 space-y-4">
+              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
+              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
+              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
+              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
 					</ul>
 				</div>
 			</div>

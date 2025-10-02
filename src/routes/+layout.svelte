@@ -2,6 +2,7 @@
 	import '../app.css';
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
+	import logoGlint from '$lib/assets/image/logo glint.png';
 	
 	let isDark = $state(false);
 	
@@ -42,49 +43,51 @@
 	<div class="mx-auto max-w-7xl px-6 py-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-xl rounded-full border border-gray-200/50 dark:border-gray-700/50 flex items-center justify-between transition-all duration-300">
 		<!-- Logo -->
 		<a href="{base}/" class="flex items-center gap-2 group">
-			<img src="{base}/assets/image/logo glint.png" alt="Glam Stitch Logo" class="h-12 w-12 object-contain transition-transform group-hover:scale-110 group-hover:rotate-3">
+			<img src={logoGlint} alt="Glam Stitch Logo" class="h-12 w-12 object-contain transition-transform group-hover:scale-110 group-hover:rotate-3">
 			<span class="hidden sm:block text-xl font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
 		</a>
 
 		<!-- Desktop Navigation -->
 		<div class="hidden lg:flex items-center space-x-1">
 			<a href="{base}/" class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all font-medium">
-				Home
+				Beranda
 			</a>
 
 			<!-- Products Dropdown -->
 			<div class="relative group">
 				<button class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all font-medium flex items-center gap-1">
-					<span>Products</span>
+					<span>Produk</span>
 					<svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</button>
 				<div class="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
-					<a href="{base}/tshirt" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">T-Shirt</a>
-					<a href="{base}/jacket" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Jacket</a>
-					<a href="{base}/shirts" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Shirts</a>
+					<a href="{base}/tshirt" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Kaos</a>
+					<a href="{base}/polo" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Kaos Polo</a>
+					<a href="{base}/jersey" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Jersey</a>
+					<a href="{base}/jacket" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Jaket</a>
+					<a href="{base}/shirts" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Kemeja</a>
 				</div>
 			</div>
 
 			<a href="{base}/services" class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all font-medium">
-				Services
+				Layanan
 			</a>
 
 			<!-- Discover Us Dropdown -->
 			<div class="relative group">
 				<button class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all font-medium flex items-center gap-1">
-					<span>Discover</span>
+					<span>Jelajahi</span>
 					<svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</button>
 				<div class="absolute left-0 top-full mt-2 w-52 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
-					<a href="{base}/about-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About Us</a>
+					<a href="{base}/about-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Tentang Kami</a>
 					<a href="{base}/blog" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Blog</a>
-					<a href="{base}/contact-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact Us</a>
-					<a href="{base}/store-location" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Store Location</a>
-					<a href="{base}/gallery" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Gallery</a>
+					<a href="{base}/contact-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Hubungi Kami</a>
+					<a href="{base}/store-location" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Lokasi Toko</a>
+					<a href="{base}/gallery" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Galeri</a>
 				</div>
 			</div>
 		</div>
@@ -133,7 +136,7 @@
 		<!-- Header -->
 		<div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
 			<div class="flex items-center gap-2">
-				<img src="{base}/assets/image/logo glint.png" alt="Logo" class="h-10 w-10" />
+				<img src={logoGlint} alt="Logo" class="h-10 w-10" />
 				<span class="text-lg font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
 			</div>
 			<label for="menu-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer">
@@ -146,59 +149,65 @@
 		<!-- Navigation -->
 		<nav class="p-4 space-y-2">
 			<a href="{base}/" class="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
-				Home
+				Beranda
 			</a>
 
 			<!-- Products Dropdown -->
 			<div>
 				<input type="checkbox" id="mobile-products" class="peer/products hidden" />
 				<label for="mobile-products" class="flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-all">
-					<span>Products</span>
+					<span>Produk</span>
 					<svg class="w-5 h-5 transition-transform peer-checked/products:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
-				<div class="overflow-hidden max-h-0 peer-checked/products:max-h-48 transition-all duration-300 ml-4 space-y-1">
+				<div class="overflow-hidden max-h-0 peer-checked/products:max-h-72 transition-all duration-300 ml-4 space-y-1">
 					<a href="{base}/tshirt" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						T-Shirt
+						Kaos
+					</a>
+					<a href="{base}/polo" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+						Kaos Polo
+					</a>
+					<a href="{base}/jersey" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
+						Jersey
 					</a>
 					<a href="{base}/jacket" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Jacket
+						Jaket
 					</a>
 					<a href="{base}/shirts" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Shirts
+						Kemeja
 					</a>
 				</div>
 			</div>
 
 			<a href="{base}/services" class="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
-				Services
+				Layanan
 			</a>
 
 			<!-- Discover Dropdown -->
 			<div>
 				<input type="checkbox" id="mobile-discover" class="peer/discover hidden" />
 				<label for="mobile-discover" class="flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-all">
-					<span>Discover</span>
+					<span>Jelajahi</span>
 					<svg class="w-5 h-5 transition-transform peer-checked/discover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
 				<div class="overflow-hidden max-h-0 peer-checked/discover:max-h-64 transition-all duration-300 ml-4 space-y-1">
 					<a href="{base}/about-us" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						About Us
+						Tentang Kami
 					</a>
 					<a href="{base}/blog" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
 						Blog
 					</a>
 					<a href="{base}/contact-us" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Contact Us
+						Hubungi Kami
 					</a>
 					<a href="{base}/store-location" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Store Location
+						Lokasi Toko
 					</a>
 					<a href="{base}/gallery" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Gallery
+						Galeri
 					</a>
 				</div>
 			</div>

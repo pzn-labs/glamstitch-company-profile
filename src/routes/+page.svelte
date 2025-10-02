@@ -1,5 +1,11 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
+  import gambar4 from '$lib/assets/image/gambar4.png';
+  import gambar5 from '$lib/assets/image/gambar5.png';
+  import gambar6 from '$lib/assets/image/gambar6.png';
+  import gambar7 from '$lib/assets/image/gambar7.png';
+  import gallery5 from '$lib/assets/image/gallery5.jpg';
+  import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
 <!--header-->
@@ -93,7 +99,7 @@
         <!-- Image Section -->
         <div class="mt-16 lg:mt-0 lg:ml-16 w-full lg:w-1/2 animate__animated animate__fadeIn animate__delay-1800ms">
             <img
-            src="assets/image/gallery5.jpg"
+            src={gallery5}
             alt="Tim produksi Glam Stitch sedang menjahit kaos custom"
             class="w-full h-96 lg:h-[500px] rounded-2xl shadow-2xl object-cover transition duration-500 transform hover:scale-105 hover:shadow-2xl" />
         </div>
@@ -111,7 +117,7 @@
          <!-- Gambar -->
          <div class="w-full lg:w-1/2 animate__animated animate__fadeInUp animate__delay-900ms">
              <img 
-              src="assets/image/gambar4.png" 
+              src={gambar4} 
               alt="Ilustrasi cara pemesanan" 
               class="w-full h-96 lg:h-[600px] rounded-2xl shadow-2xl object-contain bg-white p-4 transition duration-500 transform hover:scale-105 hover:shadow-2xl">
         </div>
@@ -158,7 +164,7 @@
          <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__delay-600ms">
            <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">T-Shirt</p>
            <div class="text-center">
-             <img src="assets/image/gambar5.png" alt="T-Shirt Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
+             <img src={gambar5} alt="T-Shirt Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
              <p class="text-xl font-semibold text-gray-900 dark:text-white">Ukuran T-Shirt</p>
              <p class="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
            </div>
@@ -168,7 +174,7 @@
          <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__delay-900ms">
            <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Jaket</p>
            <div class="text-center">
-             <img src="assets/image/gambar6.png" alt="Jacket Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
+             <img src={gambar6} alt="Jacket Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
              <p class="text-xl font-semibold text-gray-900 dark:text-white">Ukuran Jaket</p>
              <p class="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
            </div>
@@ -178,7 +184,7 @@
          <div class="flex flex-col justify-center items-center gap-4 rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__delay-1200ms">
            <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Kemeja</p>
            <div class="text-center">
-             <img src="assets/image/gambar7.png" alt="Shirt Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
+             <img src={gambar7} alt="Shirt Size Chart" class="rounded-xl mb-6 w-full h-64 object-contain bg-gray-50 p-4">
              <p class="text-xl font-semibold text-gray-900 dark:text-white">Ukuran Kemeja</p>
              <p class="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">Pilih ukuran sesuai dengan ukuran dada dan panjang badan Anda.</p>
            </div>
@@ -276,7 +282,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src="assets/image/logo glint.png" alt="Glam Stitch Logo">
+          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->
@@ -304,31 +310,33 @@
           <div>
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Home</a></li>
-              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Products</a></li>
-              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Services</a></li>
+              <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
+              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
+              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
             </ul>
           </div>
           
           <!-- Products -->
           <div>
-            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Products</h3>
+            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Produk</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">T-Shirts</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jacket</a></li>
-              <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Shirts</a></li>
+              <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
+              <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
+              <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jaket</a></li>
+              <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
           
           <!-- Discover Us -->
           <div>
-            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Discover Us</h3>
+            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">About Us</a></li>
+              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
               <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
-              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Contact Us</a></li>
-              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Store Location</a></li>
-              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Gallery</a></li>
+              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
+              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
 
             </ul>
           </div>
