@@ -9,7 +9,7 @@ export default {
   kit: {
     adapter: adapter(),
     paths: {
-      base: dev ? '' : '/glamstitch-company-profile'
+      base: dev ? '' : (process.env.BASE_PATH || '/glamstitch-company-profile')
     },
     alias: {
       $components: 'src/components',
