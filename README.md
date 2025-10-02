@@ -1,20 +1,25 @@
-# sv
+# glamstitch-company-profile
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Glam Stitch Company Profile - A modern, responsive company profile website built with SvelteKit.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Modern and responsive design
+- Dark/Light mode toggle
+- Product showcase (T-Shirts, Jackets, Shirts)
+- Company information and services
+- Contact and location pages
+- Gallery showcase
+- Blog section
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Tech Stack
 
-# create a new project in my-app
-npx sv create my-app
-```
+- SvelteKit
+- TailwindCSS
+- TypeScript
+- Vite
 
-## Developing
+## Development
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
@@ -35,5 +40,12 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-# company-profile-sveltekit
+## Deployment
+
+To deploy to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+> This project uses @sveltejs/adapter-static for static site generation and deployment.

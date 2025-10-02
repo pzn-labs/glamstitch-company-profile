@@ -9,7 +9,6 @@ export default {
   kit: {
     adapter: adapter(),
     paths: {
-      // nama repo kamu
       base: dev ? '' : '/glamstitch-company-profile'
     },
     alias: {

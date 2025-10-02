@@ -1,13 +1,13 @@
 {
-	"name": "company-profile-sveltekit",
+	"name": "glamstitch-company-profile",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev --host",
+		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"deploy": "vite build && gh-pages -d build -t --repo https://github.com/pzn-labs/glamstitch-company-profile.git",
+		"deploy": "npm run build && gh-pages -d build --repo https://github.com/pzn-labs/glamstitch-company-profile.git",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
