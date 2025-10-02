@@ -156,12 +156,12 @@
 </section>
 
 <!-- Contact CTA -->
-<section class="bg-white py-16">
+<section class="bg-white dark:bg-gray-900 py-16">
   <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
       Masih Ada Pertanyaan?
     </h2>
-    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
       Tim customer service kami siap membantu Anda dengan pertanyaan lebih spesifik tentang kebutuhan konveksi Anda.
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
