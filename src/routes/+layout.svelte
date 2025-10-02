@@ -5,6 +5,7 @@
 	import logoGlint from '$lib/assets/image/logo glint.png';
 	
 	let isDark = $state(false);
+	let isTransitioning = $state(false);
 	
 	onMount(() => {
 	  const storedDark = localStorage.getItem('theme') === 'dark';

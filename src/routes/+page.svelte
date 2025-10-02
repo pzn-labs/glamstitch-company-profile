@@ -136,7 +136,7 @@
           
   
         <!-- Langkah-langkah -->
-        <div class="w-full lg:w-1/2 space-y-12">
+        <div class="w-full lg:w-2/4 space-y-12">
           <div class="group block animate__animated animate__fadeInUp animate__delay-1200ms">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">1. Konsultasi</h3>
             <p class="mt-2 text-sm text-gray-500 dark:text-gray-200">Hubungi tim kami untuk berdiskusi mengenai desain, bahan, dan kebutuhan Anda. Kami siap memberikan saran terbaik untuk memenuhi permintaan Anda.</p>
